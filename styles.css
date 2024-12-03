@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #e0eafc, #cfdef3);
+    margin: 20;
+    padding: 10;
+    color: #333;
+    box-sizing: border-box;
+    text-align: center;
+    gap: 30px;
+}
+label {
+    margin-right: 75px;
+    font-weight: bold;
+}
+/* Styling for dropdowns and date input */
+select, input[type="date"] {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 15px 15px;
+}
+
+/* Filter Section */
+.filter-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.filter-container input,
+.filter-container select {
+    width: calc(50% - 10px);
+    padding: 12px;
+    margin: 10px 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.filter-container input:focus,
+.filter-container select:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 6px rgba(37, 117, 252, 0.5);
+    outline: none;
+}
+
+.filter-container label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Search Button */
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 12px rgba(37, 117, 252, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Data Table */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+table thead {
+    background: #2575fc;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+table th,
+table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: rgba(37, 117, 252, 0.1);
+    transition: background 0.3s ease;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-container input,
+    .filter-container select {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
