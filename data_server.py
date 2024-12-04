@@ -27,7 +27,7 @@ def get_public_ip():
         return "Unable to fetch IP"
 
 # Define the root route for testing purposes
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
     #return render_template('Foodsales.html')
     return "Flask server is running!"
@@ -73,13 +73,13 @@ def get_filtered_data():
     result = filtered_df.to_dict(orient='records')
     return jsonify(result)
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     # Run the Flask app and allow external connections (0.0.0.0)
-    app.run(host='0.0.0.0', port=5000, debug=False)
-#if __name__ == "__main__":
-    #import os
-    #port = int(os.environ.get("PORT", 5000))
-    #app.run(host="0.0.0.0", port=port)
+    #app.run(host='0.0.0.0', port=5000, debug=False)
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
 
 
 #if __name__ == '__main__':
