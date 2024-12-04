@@ -32,7 +32,7 @@ def home():
     #return render_template('Foodsales.html')
     return "Flask server is running!"
     print("Current working directory:", os.getcwd())
-    return render_template('Foodsales.html')
+    return render_template('index.html')
     
 # Endpoint to get unique values for City and Category
 @app.route('/get_initial_data', methods=['GET'])
