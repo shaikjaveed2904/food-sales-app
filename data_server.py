@@ -6,8 +6,8 @@ import os
 #from datetime import datetime
 
 # Load the Excel file
-excel_file_path = 'D:/Javeed/ITU/Fall 2024 SEM-1/HTML,CSS& Java Script/Project/project 1/foodsales/sampledatafoodsales_analysis.xlsx'
-#excel_file_path = "sampledatafoodsales_analysis.xlsx"
+#excel_file_path = 'D:/Javeed/ITU/Fall 2024 SEM-1/HTML,CSS& Java Script/Project/project 1/foodsales/sampledatafoodsales_analysis.xlsx'
+excel_file_path = "/sampledatafoodsales_analysis.xlsx"
 #df = pd.read_excel(excel_file_path, sheet_name='FoodSales', engine='openpyxl')
 df = pd.read_excel(excel_file_path, sheet_name='FoodSales')
 print(df)
