@@ -66,7 +66,8 @@
         const categoryDropdown = document.getElementById('category');
 
         // Fetch initial data for dropdowns
-        fetch('http://127.0.0.1:5000/get_initial_data')
+        fetch('https://enigmatic-lowlands-17764-fbeb0514d258.herokuapp.com/get_initial_data')
+        // fetch('http://127.0.0.1:5000/get_initial_data')
             .then(response => response.json())
             .then(data => {
                 populateDropdown(cityDropdown, data.cities, "All Cities");
@@ -98,7 +99,8 @@
                 const city = cityDropdown.value === "All Cities" ? "" : cityDropdown.value;
                 const category = categoryDropdown.value === "All Categories" ? "" : categoryDropdown.value;
 
-                const url = `http://127.0.0.1:5000/get_filtered_data?start_date=${startDate}&end_date=${endDate}&city=${city}&category=${category}`;
+                // const url = `http://127.0.0.1:5000/get_filtered_data?start_date=${startDate}&end_date=${endDate}&city=${city}&category=${category}`;
+                const url = `http://enigmatic-lowlands-17764-fbeb0514d258.herokuapp.com/get_filtered_data?start_date=${startDate}&end_date=${endDate}&city=${city}&category=${category}`;
             
                 fetch(url)
                     .then(response => response.json())
