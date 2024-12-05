@@ -34,11 +34,11 @@ def home():
     print("Current working directory:", os.getcwd())
     return render_template('index.html')
     
-# Define the favicon route for testing purposes
-@app.route('/favicon.ico', methods=['GET'])
-def favicon():
-    #return render_template('Foodsales.html')
-    return "Favicon is running!"  
+# # Define the favicon route for testing purposes
+# @app.route('/favicon.ico', methods=['GET'])
+# def favicon():
+#     #return render_template('Foodsales.html')
+#     return "Favicon is running!"  
     
 # Endpoint to get unique values for City and Category
 @app.route('/get_initial_data', methods=['GET'])
